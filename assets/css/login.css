@@ -1,0 +1,29 @@
+.container {
+    width: 40%;
+    border-color: blue;
+    border-width: 2px;
+    border-style: double;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.posts {
+    margin: auto;
+}
+
+.post {
+    text-align: left;
+}
+
+.pbutton {
+    text-align: center;
+}
+span{
+    color: blue;
+}
+
+#pbody {
+    height: 50px;
+    width: 25%;
+}
