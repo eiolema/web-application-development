@@ -5,26 +5,38 @@
     <title>AddPost</title>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/addPost.css">
 </head>
 <body>
     <header>
         <div class="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li id="profile-pic"><img alt="image" src="assets/images/img.png"></li>
-        </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="profile-pic">
+                    <a href="login.html">
+                        <img alt="image" src="assets/images/img.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     </header>
     <div class="container">
-    <div class="post">
-    <form action="index.html">
-        <p><label for="pbody">Post body</label>
-        <input type="text" name="pbody" id="pbody" placeholder="textarea" required></p>
-        <p><label for="pfile">Select file</label>
-        <input type="file" name="pfile" value="Choose file"></p>
-        <p class="pbutton">
-        <input type="submit" value="Create post"></p>
-    </form>
+        <div class="post">
+            <form action="index.html">
+                <div class="pbody">
+                    <label for="pbody">Post body</label>
+                    <textarea rows="5" cols="20" required>textarea</textarea>
+                </div>
+                
+                <div class="file">
+                    <label for="pfile">Select file</label>
+                    <input type="file" name="pfile" value="Choose file">
+                </div>
+                
+                <p class="pbutton">
+                <input type="submit" class="submit" value="Create post"></p>
+            </form>
+        </div>
     </div>
-</div>
 </body>

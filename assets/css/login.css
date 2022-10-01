@@ -1,29 +1,28 @@
 .container {
-    width: 40%;
-    border-color: blue;
-    border-width: 2px;
-    border-style: double;
+    width: 300px;
     margin: auto;
     margin-top: 10%;
     text-align: center;
 }
 
-.posts {
+.login {
     margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
 }
 
-.post {
-    text-align: left;
-}
-
-.pbutton {
-    text-align: center;
-}
-span{
+span {
     color: blue;
 }
 
-#pbody {
-    height: 50px;
-    width: 25%;
+.inputfield {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 186px;
+}
+
+.submit {
+    padding: 5px;
+    width: 200px;
 }
