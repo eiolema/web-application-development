@@ -49,6 +49,13 @@ li img {
     justify-content:space-between;
 }
 
+.content {
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+
 .content img {
     display: block;
     margin-left: auto;
@@ -62,11 +69,6 @@ li img {
     line-height: 1.5;
 }
 
-.content {
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 50px;
-}
 
 footer {
     height: 25px;

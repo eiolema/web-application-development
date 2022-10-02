@@ -12,6 +12,11 @@
     border-radius: 20px;
 }
 
+h1 + p {
+    font-weight: 1000;
+    font-family: "Courier 10 Pitch", cursive;
+}
+
 span {
     color: blue;
 }
