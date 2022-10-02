@@ -18,6 +18,10 @@
     padding-bottom: 15px;
 }
 
+.post-header ~ p {
+    font-family: "Nimbus Mono L", monospace;
+}
+
 .post-header .date {
     margin-right: 30px;
 }
