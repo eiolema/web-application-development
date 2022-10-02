@@ -56,13 +56,6 @@ li img {
 }
 
 
-.content img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
 .content > p {
     padding: 20px 30px;
     margin: 0;
