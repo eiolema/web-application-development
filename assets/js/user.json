@@ -1,0 +1,8 @@
+{
+  "record": {
+    "id": 1,
+    "name": "Michael Knight",
+    "email": "michael@knight-industries.com",
+    "imageUrl": "assets/images/img.png"
+  }
+}

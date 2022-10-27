@@ -1,7 +1,7 @@
-//fetchUser("https://api.jsonbin.io/v3/b/635ac6ce2b3499323bec93cc");
-fetchUser("assets/js/user.json");
+//fetchPosts("https://api.jsonbin.io/v3/b/635969a30e6a79321e3565aa");
+fetchPosts("assets/js/posts.json");
 
-function fetchUser(url) {
+function fetchPosts(url) {
     fetch(url)
         .then(function (response) {
             return response.json();
@@ -14,7 +14,7 @@ function fetchUser(url) {
         });
 }
 
-function createUser(data) {
+function createPosts(data) {
     console.log(data);
-    // todo: create user data dropdown
+    // todo: create posts
 }

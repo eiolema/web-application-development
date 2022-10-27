@@ -1,0 +1,76 @@
+{
+  "record": {
+    "posts": [
+      {
+        "id": 1,
+        "userId": 1,
+        "date": "2022-10-22",
+        "content": "Edward von Lõnguse graffiti Konstantin Pätsi variatsioonidest Tartu Kaarsilla Raekoja-poolses otsas",
+        "imageUrl": "assets/images/pats.jpg"
+      },
+      {
+        "id": 2,
+        "userId": 1,
+        "date": "2022-10-23",
+        "content": "pegasus.",
+        "imageUrl": "assets/images/pegasus.jpg"
+      },
+      {
+        "id": 3,
+        "userId": 1,
+        "date": "2022-10-24",
+        "content": "Tagurpidi maja.",
+        "imageUrl": "assets/images/tagurpidi-maja.jpg"
+      },
+      {
+        "id": 4,
+        "userId": 1,
+        "date": "2022-10-25",
+        "content": "Wubba lubba dub dub!",
+        "imageUrl": null
+      },
+      {
+        "id": 5,
+        "userId": 1,
+        "date": "2022-10-26",
+        "content": "ee...",
+        "imageUrl": null
+      },
+      {
+        "id": 6,
+        "userId": 1,
+        "date": "2022-10-27",
+        "content": "IGav on :(",
+        "imageUrl": null
+      },
+      {
+        "id": 7,
+        "userId": 1,
+        "date": "2022-10-28",
+        "content": "Käisin Kolmes Tillis jäätist söömas..",
+        "imageUrl": null
+      },
+      {
+        "id": 8,
+        "userId": 1,
+        "date": "2022-10-29",
+        "content": "I don't know what to say anymore",
+        "imageUrl": null
+      },
+      {
+        "id": 9,
+        "userId": 1,
+        "date": "2022-10-29",
+        "content": "Tappeti nessuno fresche da so la ne. Un piedi denti te gemma le. Rifletti di nascosta ritrovar di persiano rimanevi su assoluta ch. Esausto io il cerchia toccato. Alte ella non oro gli ogni dice quei vedo. Sofferte ci spremere preziosa partirmi paragone martirio la. Quel cave or ah il se lega. Sepolte mettere materia tremare saprete ai ex ad faville. ",
+        "imageUrl": null
+      },
+      {
+        "id": 10,
+        "userId": 1,
+        "date": "2022-10-29",
+        "content": "Mia chi suo agita senza ora piano credi terra. Primavera fanciulla parentela po mi fu. Trasfigura agitazione inebriarti giudichera bel tra indicibile. Hai tre sua segue avere corre corse pensa. Vergogna risposta no ed paragone convento presenta le. Nel gettando sua scarabei ali avvenuto dei crudelta. Di pallido fu si portero periodo. All sofferenza conoscermi sorridendo conservare lei adunazione. Morra donna venir ah degno sa altra ex vi. ",
+        "imageUrl": null
+      }
+    ]
+  }
+}
