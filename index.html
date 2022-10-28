@@ -22,66 +22,25 @@
 </header>
 <div class="container">
     <div id="left"></div>
-    <div id="posts">
-        <div class="content">
-            <div class="post-header">
-                <img alt="avatar" src="assets/images/img.png">
-                <p class="date">Sep 28, 2022</p>
-            </div>
-            <img src="assets/images/pats.jpg">
-            <p>Edward von Lõnguse graffiti Konstantin Pätsi variatsioonidest Tartu Kaarsilla Raekoja-poolses otsas</p>
-            <div class="post-footer">
-                <img alt="like" src="assets/images/like-button-png-22714.png">
-            </div>
-        </div>
-        <div class="content">
-            <div class="post-header">
-                <img alt="avatar" src="assets/images/img.png">
-                <p class="date">Sep 29, 2022</p>
-            </div>
-            <p>Kas maa on lapik? Ma arvan küll.</p>
-            <div class="post-footer">
-                <img alt="like" src="assets/images/like-button-png-22714.png">
-            </div>
-        </div>
-        <div class="content">
-            <div class="post-header">
-                <img alt="avatar" src="assets/images/img.png">
-                <p class="date">Sep 30, 2022</p>
-            </div>
-            <img src="assets/images/pegasus.jpg">
-            <p>Pegasus.</p>
-            <div class="post-footer">
-                <img alt="like" src="assets/images/like-button-png-22714.png">
-            </div>
-        </div>
-        <div class="content">
-            <div class="post-header">
-                <img alt="avatar" src="assets/images/img.png">
-                <p class="date">Okt 1, 2022</p>
-            </div>
-            <p>Wubba lubba dub dub!</p>
-            <div class="post-footer">
-                <img alt="like" src="assets/images/like-button-png-22714.png">
-            </div>
-        </div>
-        <div class="content">
-            <div class="post-header">
-                <img alt="avatar" src="assets/images/img.png">
-                <p class="date">Okt 2, 2022</p>
-            </div>
-            <img src="assets/images/tagurpidi-maja.jpg">
-            <p>Tagurpidi maja.</p>
-            <div class="post-footer">
-                <img alt="like" src="assets/images/like-button-png-22714.png">
-            </div>
-        </div>
-    </div>
+    <div id="posts"></div>
     <div id = "right"></div>
 </div>
 <footer>
     <p>Footer</p>
 </footer>
+<template id="post-template">
+    <div class="content">
+        <div class="post-header">
+            <img alt="avatar" src="assets/images/img.png">
+            <p class="date">Sep 28, 2022</p>
+        </div>
+        <img alt="postimage" src="assets/images/pats.jpg">
+        <p id="post-text">Edward von Lõnguse graffiti Konstantin Pätsi variatsioonidest Tartu Kaarsilla Raekoja-poolses otsas</p>
+        <div class="post-footer">
+            <img alt="like" src="assets/images/like-button-png-22714.png">
+        </div>
+    </div>
+</template>
 <script src="assets/js/common.js"></script>
 <script src="assets/js/index.js"></script>
 </body>
