@@ -1,5 +1,4 @@
 fetchUser("https://api.jsonbin.io/v3/b/635ac6ce2b3499323bec93cc");
-//fetchUser("assets/js/user.json");
 
 function fetchUser(url) {
     fetch(url)
@@ -15,7 +14,6 @@ function fetchUser(url) {
 }
 
 function createUser(data) {
-    console.log(data);
     var userUL = document.querySelector(".dd-user");
     
     let nameLI = document.createElement("li")

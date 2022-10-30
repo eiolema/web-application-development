@@ -1,5 +1,4 @@
 fetchPosts("https://api.jsonbin.io/v3/b/635969a30e6a79321e3565aa");
-//fetchPosts("assets/js/posts.json");
 
 function fetchPosts(url) {
     fetch(url)
@@ -15,14 +14,12 @@ function fetchPosts(url) {
 }
 
 function createPosts(data) {
-    console.log(data);
     const postsParent = document.querySelector("#posts");
 
     const postTemplate = document.querySelector("#post-template");
     const postElement = postTemplate.content.querySelector("div");
 
     data.posts.forEach(post => {
-        console.log(post);
         const newPost = document.importNode(postElement, true);
 
         const header = newPost.querySelector(".post-header");
