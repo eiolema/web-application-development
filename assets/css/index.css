@@ -66,3 +66,29 @@
         width: 75%;
     }
 }
+
+/*Homework 2*/
+.dropdown{
+    position: relative;
+    display: block;
+}
+
+.dd-content{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 10px 15px 0px blue;
+    text-align: left;
+}
+
+.show {display:block;}
+
+.dd-user > li  {
+    display: block;
+    cursor: default;
+}
+
+.dd-user > li:hover{
+    background-color: white;
+}
