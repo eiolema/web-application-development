@@ -1,4 +1,6 @@
-fetchUser("https://api.jsonbin.io/v3/b/635ac6ce2b3499323bec93cc");
+//fetchUser("https://api.jsonbin.io/v3/b/635ac6ce2b3499323bec93cc");
+fetchUser("assets/js/user.json");
+
 
 function fetchUser(url) {
     fetch(url)

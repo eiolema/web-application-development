@@ -1,4 +1,5 @@
-fetchPosts("https://api.jsonbin.io/v3/b/635969a30e6a79321e3565aa");
+//fetchPosts("https://api.jsonbin.io/v3/b/635969a30e6a79321e3565aa");
+fetchPosts("assets/js/posts.json");
 
 function fetchPosts(url) {
     fetch(url)
