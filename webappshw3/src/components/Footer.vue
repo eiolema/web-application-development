@@ -16,6 +16,7 @@ export default ({
     display: flexblock;
     width: 100%;
     color: white;
-    background-color: blue;
+    background-color: red;
+    border-radius: 15px;
 }
 </style>
