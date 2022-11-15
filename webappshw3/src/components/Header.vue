@@ -15,7 +15,6 @@
 }
 
 nav {
-  display: flexbox;
   padding: 30px;
   background-color: blue;
   border-radius: 5px;

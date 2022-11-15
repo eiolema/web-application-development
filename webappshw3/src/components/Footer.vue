@@ -13,10 +13,10 @@ export default ({
 
 <style>
 .footer {
-    display: flexblock;
     width: 100%;
     color: white;
     background-color: red;
     border-radius: 15px;
+    padding: 15px;
 }
 </style>

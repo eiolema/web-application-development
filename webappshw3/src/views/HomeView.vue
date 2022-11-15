@@ -13,14 +13,12 @@
 
 <script>
 // @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    //HelloWorld,
     Footer,
     Header,
   }
@@ -31,6 +29,8 @@ export default {
 .container {
   display: flex;
   justify-content:space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #posts {
@@ -43,6 +43,5 @@ export default {
     width: 20%;
     background-color: black;
     border-radius: 10px;
-
 }
 </style>
