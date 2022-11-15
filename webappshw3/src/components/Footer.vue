@@ -1,6 +1,7 @@
 <template>
     <div class="footer">
-        Footer-stuff will come here
+        © 2022 Merit Laidroo, Florian Nebenführ, Toomas Raaga <br>
+        Web Application Development at the University of Tartu / Tartu Ülikool
     </div>
 </template>
 
@@ -13,7 +14,6 @@ export default ({
 
 <style>
 .footer {
-    width: 100%;
     color: white;
     background-color: red;
     border-radius: 15px;

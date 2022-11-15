@@ -7,6 +7,7 @@
   	</div>
     <div id = "right"></div>
     </div>
+    <LikeReset/>
     <Footer />
   </div>
 </template>
@@ -15,12 +16,14 @@
 // @ is an alias to /src
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
+import LikeReset from '@/components/LikeReset.vue';
 
 export default {
   name: 'HomeView',
   components: {
     Footer,
     Header,
+    LikeReset,
   }
 }
 </script>
