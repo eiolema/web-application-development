@@ -2,6 +2,9 @@ body {
     background-color: whitesmoke;
     margin: 0;
     font-family: "Andale Mono", monospace;
+}
+
+#app {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
