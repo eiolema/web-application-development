@@ -1,0 +1,33 @@
+.container {
+    width: 300px;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.login {
+    margin: auto;
+    background-color: white;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+h1 + p {
+    font-weight: 1000;
+    font-family: "Courier 10 Pitch", cursive;
+}
+
+span {
+    color: blue;
+}
+
+.inputfield {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 186px;
+}
+
+.submit {
+    padding: 5px;
+    width: 200px;
+}
