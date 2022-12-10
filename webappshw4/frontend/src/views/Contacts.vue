@@ -1,5 +1,5 @@
 <template>
-  <div class="signup">
+  <div class="container">
     Project by Merit Laidroo, Florian Nebenführ, Toomas Raaga<br>
     Tel: +372 555 5555 <br>
     Email: example@ut.ee  <br>

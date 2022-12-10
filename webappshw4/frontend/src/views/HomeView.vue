@@ -1,11 +1,18 @@
 <template>
     <div class="home">
         <div class="container">
+            <input type="button" class="button" name="Logout" value="Logout" @click="Logout">
             <div id="left"></div>
             <div id="posts">
-                <h1 v-if="$store.state.posts.length === 0">There will be posts here, eventually!</h1>
-                <!--  <post v-for="post in $store.state.posts" :id="post.id" :user-id="post.userId" :date="post.date"
-                      :content="post.content" :image-url="post.imageUrl"/> -->
+                <ul>
+                    <div class="item" v-for="post in posts" :key="post.id">
+                        <a class= 'post' :href="'/post/' + post.id">
+                            <span class="title"> <b>Title:</b> {{ post.title }}  </span><br />
+                            <span class="body"> <b>Body:</b> {{ post.body }} </span> <br />
+                            <span class="url"> <b>Url:</b> {{ post.urllink }} </span> <br />
+                        </a>
+                    </div>
+                </ul>
             </div>
             <div id="right"></div>
         </div>
@@ -24,12 +31,22 @@ export default {
         Post,
         PostButtons,
     },
+    methods: {
+        Logout() {
+           // this.$router.push("/Login");
+        }
+    },
+    /*
     mounted() {
         this.$store.dispatch("getData");
     }
+    */
 }
 </script>
 
-<style>
+<style scoped>
 @import "@/assets/css/index.css";
+.home{
+    color: red;
+}
 </style>

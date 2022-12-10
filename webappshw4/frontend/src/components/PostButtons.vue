@@ -1,7 +1,7 @@
 <template>
     <div class="like-reset">
-        <input type="button" class="button" name="AddPost" value="Add Post">
-        <input type=" button" class="button"  name="DeleteAll" value="Delete all">
+        <input type="button" class="button" name="AddPost" value="Add Post" @click="addPost">
+        <input type="button" class="button"  name="DeleteAll" value="Delete all">
         <br>
     </div>
 </template>
@@ -9,12 +9,12 @@
 <script>
 
 export default {
-    name: 'ResetLikes',
+    name: "PostButtons",
     methods: {
-        reset() {
-            this.$store.dispatch("resetLikes");
+        addPost() {
+            this.$router.push("/addpost");
         }
-    },
+    }
 }
 </script>
 
