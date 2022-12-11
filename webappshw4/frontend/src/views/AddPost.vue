@@ -1,6 +1,6 @@
 <template>
   <div class="form">
-    <h3>Add a Post</h3>
+    <h3>Add post</h3>
     <label for="content">Body: </label>
     <textarea name="content" required v-model="post.content" />
     <input type="button" @click="addPost" class="addPost button" value="Add post">

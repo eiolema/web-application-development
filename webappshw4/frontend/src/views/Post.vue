@@ -1,6 +1,6 @@
 <template>
   <div class="form">
-        <h3>A Post</h3>
+        <h3>Edit post</h3>
         <label for="content">Body: </label>
         <textarea name="content" id="content" required v-model="post.content" />
       <div class="container">
