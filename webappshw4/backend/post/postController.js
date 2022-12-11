@@ -46,9 +46,8 @@ const deleteOne = async (req, res) => {
 
 const deleteAll = async (req, res) => {
     try {
-        const result = await postsService.deleteAll;
-        console.log('deleted '  + result.rows + ' rows')
-        res.status(201).json().send;
+        const result = await postsService.deleteAll();
+        res.status(201).json({}).send;
 
     } catch (error) {
         res.status(400).json({error: error.message})

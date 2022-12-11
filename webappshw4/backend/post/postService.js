@@ -13,7 +13,7 @@ const deleteOnePost = async (id) => {
 }
 
 const deleteAll = async () => {
-    return await pool.query("WITH deleted AS (DELETE FROM posts RETURNING *) SELECT count(*) FROM deleted")
+    return await pool.query("DELETE FROM posts RETURNING 1")
 }
 
 const addPost = async (content) => {
