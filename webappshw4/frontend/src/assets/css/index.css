@@ -1,4 +1,4 @@
-.container .posts{
+.container .posts {
     width: 200px;
 }
 
@@ -74,18 +74,19 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+
     #posts {
         width: 75%;
     }
 }
 
 /*Homework 2*/
-.dropdown{
+.dropdown {
     position: relative;
     display: block;
 }
 
-.dd-content{
+.dd-content {
     display: none;
     position: absolute;
     right: 0;
@@ -94,13 +95,20 @@
     text-align: left;
 }
 
-.show {display:block;}
+.show {
+    display: block;
+}
 
-.dd-user > li  {
+.dd-user > li {
     display: block;
     cursor: default;
 }
 
-.dd-user > li:hover{
+.dd-user > li:hover {
     background-color: white;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: center;
 }

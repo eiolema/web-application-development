@@ -1,14 +1,17 @@
 <template>
     <div class="home">
         <div class="container">
-            <input type="button" class="button" name="Logout" value="Logout" @click="Logout">
             <div id="left"></div>
-            <div id="posts">
-              <post v-for="post in posts" :id="post.id" :timestamp="post.timestamp" :content="post.content"></post>
+            <SignIn v-if="!auth"/>
+            <div id="posts" v-if="auth">
+                <div class="logout-container">
+                    <input type="button" class="button" name="Logout" value="Logout" @click="Logout">
+                </div>
+                <post v-for="post in posts" :id="post.id" :timestamp="post.timestamp" :content="post.content"></post>
             </div>
             <div id="right"></div>
         </div>
-        <PostButtons/>
+        <PostButtons v-if="auth"/>
     </div>
 </template>
 
@@ -16,33 +19,51 @@
 // @ is an alias to /src
 import PostButtons from '@/components/PostButtons';
 import Post from "@/components/Post";
+import SignIn from "@/components/SignIn.vue";
 
 export default {
     name: 'HomeView',
     components: {
         Post,
         PostButtons,
+        SignIn
     },
     data() {
-    return {
-      posts: [],
-    };
+        return {
+            posts: [],
+            auth: false
+        };
     },
     methods: {
         Logout() {
-           // this.$router.push("/Login");
+            // this.$router.push("/Login");
+        },
+
+        authenticate() {
+            fetch("http://localhost:3000/auth/authenticate")
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.authenticated) {
+                        this.fetchPosts()
+                        this.auth = true;
+                    }
+                })
+                .catch((err) => {
+                    console.log(err.message);
+                    // to signup page
+                });
         },
 
         fetchPosts() {
-        fetch(`http://localhost:3000/posts`)
-            .then((response) => response.json())
-            .then((data) => (this.posts = data))
-            .catch((err) => console.log(err.message));
+            fetch(`http://localhost:3000/posts`)
+                .then((response) => response.json())
+                .then((data) => (this.posts = data))
+                .catch((err) => console.log(err.message));
         }
     },
     mounted() {
-            this.fetchPosts();
-            console.log("mounted");
+        //this.fetchPosts();
+        this.authenticate();
     },
 }
 </script>
