@@ -46,7 +46,7 @@
           });
       },
       deletePost() {
-        fetch(`http://localhost:3000/api/posts/${this.post.id}`, {
+        fetch(`http://localhost:3000/posts/${this.post.id}`, {
           method: "DELETE",
           headers: { "Content-Type": "application/json" },
         })
