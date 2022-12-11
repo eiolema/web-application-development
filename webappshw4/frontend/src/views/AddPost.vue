@@ -30,7 +30,7 @@ export default {
         body: this.post.body,
         urllink: this.post.urllink,
       };
-      fetch("http://localhost:3000/api/posts", {
+      fetch("http://localhost:3000/posts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ export default {
       })
       .then((response) => {
         console.log(response.data);
-        this.$router.push("/api/allposts");
+        this.$router.push("/");
       })
       .catch((e) => {
         console.log(e);

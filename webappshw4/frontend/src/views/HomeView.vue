@@ -31,16 +31,28 @@ export default {
         Post,
         PostButtons,
     },
+    data() {
+    return {
+      posts: [],
+    };
+    },
     methods: {
         Logout() {
            // this.$router.push("/Login");
-        }
+        },
+    
+        fetchPosts() {
+        fetch(`http://localhost:3000/posts/`)
+            .then((response) => response.json())
+            .then((data) => (this.posts = data))
+            .catch((err) => console.log(err.message));
+        },
+       
     },
-    /*
     mounted() {
-        this.$store.dispatch("getData");
-    }
-    */
+            this.fetchPosts();
+            console.log("mounted");
+    },
 }
 </script>
 
