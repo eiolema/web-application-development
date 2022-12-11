@@ -1,8 +1,8 @@
 <template>
   <div class="form">
     <h3>Add a Post</h3>
-    <label for="body">Body: </label>
-    <input name="body" type="text" id="body" required v-model="post.body" />
+    <label for="content">Body: </label>
+    <input name="content" type="text" id="body" required v-model="post.content" />
     <button @click="addPost" class="addPost">Add Post</button>
   </div>
 </template>
@@ -13,16 +13,16 @@ export default {
   data() {
     return {
       post: {
-        body: "",
+        content: "",
       },
     };
   },
   methods: {
     addPost() {
       var data = {
-        body: this.post.body,
+        content: this.post.content,
       };
-      fetch("http://localhost:3000/posts", {
+      fetch("http://localhost:3000/posts/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

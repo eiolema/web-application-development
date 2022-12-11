@@ -2,8 +2,8 @@
     <div class="A Post">
       <div id="form">
         <h3>A Post</h3>
-        <label for="body">Body: </label>
-        <input name="body" type="text" id="body" required v-model="post.body" />
+        <label for="content">Body: </label>
+        <input name="content" type="text" id="content" required v-model="post.content" />
       </div>
       <div class="container">
         <button @click="updatePost" class="updatePost">Update Post</button>
