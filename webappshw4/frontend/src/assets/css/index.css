@@ -19,7 +19,6 @@
 }
 
 .post-header {
-    display: flex;
     align-items: center;
     height: 60px;
     width: 100%;
@@ -31,8 +30,8 @@
     font-family: "Nimbus Mono L", monospace;
 }
 
-.post-header .date {
-    margin-right: 30px;
+.date {
+    text-align: right;
 }
 
 .post-header img {
