@@ -20,9 +20,7 @@
       return {
         post: {
           id: "",
-          title: "",
-          body: "",
-          urllink: "",
+          content: "",
         },
       };
     },

@@ -7,9 +7,8 @@
                 <ul>
                     <div class="item" v-for="post in posts" :key="post.id">
                         <a class= 'post' :href="'/post/' + post.id">
-                            <span class="title"> <b>Title:</b> {{ post.title }}  </span><br />
-                            <span class="body"> <b>Body:</b> {{ post.body }} </span> <br />
-                            <span class="url"> <b>Url:</b> {{ post.urllink }} </span> <br />
+                            <span class="time"> <b>Time:</b> {{ post.timestamp }}  </span><br />
+                            <span class="content"> <b>Content:</b> {{ post.content }} </span> <br />
                         </a>
                     </div>
                 </ul>
@@ -23,12 +22,12 @@
 <script>
 // @ is an alias to /src
 import PostButtons from '@/components/PostButtons';
-import Post from "@/components/Post";
+//import Post from "@/components/Post";
 
 export default {
     name: 'HomeView',
     components: {
-        Post,
+        //Post,
         PostButtons,
     },
     data() {

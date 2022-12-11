@@ -20,6 +20,11 @@ const routes = [
     name: 'addPost',
     component: () => import(/* webpackChunkName: "about" */ '../views/AddPost.vue')
   },
+  {
+    path: "/post/:id",
+    name: "Post",
+    component: () => import ('../views/Post.vue')
+},
 ]
 
 const router = createRouter({
