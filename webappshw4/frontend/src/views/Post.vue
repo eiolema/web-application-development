@@ -1,17 +1,15 @@
 <template>
-    <div class="A Post">
-      <div id="form">
+  <div class="form">
         <h3>A Post</h3>
         <label for="content">Body: </label>
-        <input name="content" type="text" id="content" required v-model="post.content" />
-      </div>
+        <textarea name="content" id="content" required v-model="post.content" />
       <div class="container">
-        <button @click="updatePost" class="updatePost">Update Post</button>
-        <button @click="deletePost" class="deletePost">Delete Post</button>
+        <button @click="updatePost" class="updatePost button">Update</button>
+        <button @click="deletePost" class="deletePost button">Delete</button>
       </div>
     </div>
   </template>
-  
+
   
   <script>
   export default {
@@ -66,3 +64,7 @@
     },
   };
   </script>
+
+<style scoped>
+@import "@/assets/css/addPost.css";
+</style>

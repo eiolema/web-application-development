@@ -4,14 +4,7 @@
             <input type="button" class="button" name="Logout" value="Logout" @click="Logout">
             <div id="left"></div>
             <div id="posts">
-                <ul>
-                    <div class="item" v-for="post in posts" :key="post.id">
-                        <a class= 'post' :href="'/post/' + post.id">
-                            <span class="time"> <b>Time:</b> {{ post.timestamp }}  </span><br />
-                            <span class="content"> <b>Content:</b> {{ post.content }} </span> <br />
-                        </a>
-                    </div>
-                </ul>
+              <post v-for="post in posts" :id="post.id" :timestamp="post.timestamp" :content="post.content"></post>
             </div>
             <div id="right"></div>
         </div>
@@ -22,12 +15,12 @@
 <script>
 // @ is an alias to /src
 import PostButtons from '@/components/PostButtons';
-//import Post from "@/components/Post";
+import Post from "@/components/Post";
 
 export default {
     name: 'HomeView',
     components: {
-        //Post,
+        Post,
         PostButtons,
     },
     data() {
@@ -39,13 +32,13 @@ export default {
         Logout() {
            // this.$router.push("/Login");
         },
-    
+
         fetchPosts() {
-        fetch(`http://localhost:3000/posts/`)
+        fetch(`http://localhost:3000/posts`)
             .then((response) => response.json())
             .then((data) => (this.posts = data))
             .catch((err) => console.log(err.message));
-        },
+        }
     },
     mounted() {
             this.fetchPosts();
@@ -56,7 +49,4 @@ export default {
 
 <style scoped>
 @import "@/assets/css/index.css";
-.home{
-    color: red;
-}
 </style>
