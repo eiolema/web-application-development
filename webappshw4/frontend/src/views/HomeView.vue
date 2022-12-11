@@ -46,7 +46,6 @@ export default {
             .then((data) => (this.posts = data))
             .catch((err) => console.log(err.message));
         },
-       
     },
     mounted() {
             this.fetchPosts();

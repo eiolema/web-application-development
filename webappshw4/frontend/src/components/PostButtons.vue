@@ -1,7 +1,7 @@
 <template>
     <div class="like-reset">
         <input type="button" class="button" name="AddPost" value="Add Post" @click="addPost">
-        <input type="button" class="button"  name="DeleteAll" value="Delete all">
+        <input type="button" class="button"  name="DeleteAll" value="Delete all" @click="deleteAll">
         <br>
     </div>
 </template>
@@ -13,7 +13,20 @@ export default {
     methods: {
         addPost() {
             this.$router.push("/addpost");
-        }
+        },
+        deleteAll() {
+        fetch(`http://localhost:3000/posts`, {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+        })
+          .then((response) => {
+            console.log(response.data);
+            this.$router.push("/");
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      },
     }
 }
 </script>
